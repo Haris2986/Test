@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    color: #0f172a;
+    background-color: #f8fafc;
+  }
+}
+
+.font-sans-resume {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+.font-serif-resume {
+  font-family: 'Merriweather', Georgia, Cambria, serif;
+}
+
+.font-modern-resume {
+  font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+}
+
+.font-mono-resume {
+  font-family: 'JetBrains Mono', Consolas, Monaco, monospace;
+}
+
+/* Dedicated print styles for crisp PDF export */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  /* Hide everything except the resume container */
+  header,
+  footer,
+  nav,
+  button,
+  .no-print,
+  #input-panes-section,
+  #results-pane-1,
+  #action-bar-section {
+    display: none !important;
+  }
+
+  #printable-resume-container {
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 10mm 15mm !important;
+    box-shadow: none !important;
+    border: none !important;
+    page-break-after: avoid;
+  }
+
+  mark {
+    background: transparent !important;
+    color: inherit !important;
+    font-weight: inherit !important;
+  }
+}

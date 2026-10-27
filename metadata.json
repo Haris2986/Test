@@ -1,0 +1,6 @@
+{
+  "name": "ATS Resume Studio - In-Memory Keyword Matcher & Tailorer",
+  "description": "Fast, private client-side ATS resume analyzer and smart rewriter. Matches job description keywords, generates ATS compatibility audits, and exports tailored resumes in Chronological, Functional, or Combination templates to Word and PDF.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
